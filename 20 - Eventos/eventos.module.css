@@ -1,0 +1,1212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* button light blue gradiente */
+/* ----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/image-32.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.section1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #12243a 0%, rgba(40, 57, 77, 0) 100%);
+}
+
+/* .container-fixed {
+
+
+  } */
+.container-fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.container-fixed__container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fixed__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 1rem 4rem;
+  box-sizing: border-box;
+}
+.container-fixed__header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14rem;
+  width: 100%;
+  pointer-events: none;
+  background: linear-gradient(0deg, rgba(0, 69, 113, 0.6) -70.07%, rgba(0, 99, 161, 0) 29.93%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.container-fixed__info-evento {
+  background-color: #1a263f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.055em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fixed__navbar {
+  display: flex;
+  gap: 1rem;
+}
+.container-fixed__navbar-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  color: #ffffff;
+}
+.container-fixed__navbar-link--blue {
+  background-color: #29618f;
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container-fixed__navbar-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container-fixed__navbar-location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.container-fixed__navbar-location-flag {
+  padding: 0 0.3rem 0 0;
+  box-sizing: border-box;
+}
+.container-fixed__navbar-location-img {
+  padding: 0 0.3rem 0 0;
+  box-sizing: border-box;
+}
+.container-fixed__navbar-location-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.055em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.container-fixed__navbar-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fixed__navbar-separator {
+  border: solid 1px #ffffff;
+}
+
+
+
+.containerPrincipal {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #12243A 0%, rgba(40, 57, 77, 0) 100%), url("../assets/imagenes/matthew\ 1.png") no-repeat;
+    background-size: cover; /* o "contain", dependiendo de tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }  
+  
+.ContainerSecundario {
+  height: 300px;
+  width: 727px;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14em;
+}
+.containerTitulo {
+  height: 50px;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: 3em;
+}
+.containerSubtitulo {
+  height: 130px;
+  width: 611.0333251953125px;
+  left: 108px;
+  margin-left: 3em;
+}
+.containerBoton {
+  margin-left: 3em;
+}
+.containerBoton2 {
+  display: flex;
+  gap: 3em;
+}
+.tituloInicial{
+    font-family: Poppins;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0.055em;
+text-align: left;
+margin: 0;
+padding: 0;
+color: white
+
+}
+.parrafoInicial {
+    color: white;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.055em;
+text-align: left;
+margin-top: 1.5em;
+}
+.primerBotonInicial{
+    height: 45.668426513671875px;
+width: 200.03414916992188px;
+border-radius: 30px;
+border: none;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 800;
+color: white;
+background: linear-gradient(90deg, #4FA9DD 37.5%, #63B5B4 100%);
+}
+.flechaBotonInicial{
+    margin-left: 3em;
+}
+.segundoBotonInicial{
+    height: 45.668426513671875px;
+width: 200.03414916992188px;
+border-radius: 30px;
+border: 4px solid #FFFFFF;
+backdrop-filter: blur(2px);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 800;
+color: white;
+background:transparent;
+}
+.contenedorBotonGroup{
+  width: 100%;
+  height: 30px;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+
+/* hasta aqui va la pantalla principal */
+
+.contenedorTituloEvento {
+  height: 72px;
+  width: 615px;
+  left: 108px;
+  border-radius: nullpx;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+.tituloEvento {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+  color: #242565;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorPrincipal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 2em;
+}
+.calendarioGrande {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.calendarioPequeño {
+  width: 50%;
+  height: 100%;
+}
+.contenedorPrincipalCalendario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 25px 10px rgba(136, 136, 136, 0.15);
+  backdrop-filter: blur(7.5px);
+  border-radius: 20px;
+  margin-left: 11em;
+  margin-top: 2em;
+}
+.fechaCalendario {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nombreCalendario {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.dias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin: 2em;
+}
+.fecha {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+.dia1 {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+}
+.fecha1 {
+  width: 30px;
+  height: 30px;
+  background: #4fa9dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  margin-top: 0.1em;
+}
+.fecha2 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  color: #bdbdbd;
+}
+.contenedorCalendario {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.contenedorCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+  margin-top: 10em;
+  margin-left: 6em;
+}
+.calendar {
+  background: linear-gradient(
+      358.78deg,
+      #1a263f 6.68%,
+      rgba(26, 38, 63, 0) 104.6%
+    ),
+    url("../assets/imagenes/campaign.png") no-repeat;
+  background-size: cover; /* o "contain", dependiendo de tus necesidades */
+  display: flex;
+  align-items: center;
+
+  border-radius: 15px;
+  width: 334px;
+  gap: 4.5em;
+}
+.calendar1 {
+  background: linear-gradient(
+      358.78deg,
+      #1a263f 6.68%,
+      rgba(26, 38, 63, 0) 104.6%
+    ),
+    url("../assets/imagenes/campaign\ 1.png") no-repeat;
+  background-size: cover; /* o "contain", dependiendo de tus necesidades */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px;
+  width: 334px;
+  gap: 4.5em;
+}
+.calendarText {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.subNameCalendar {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  color: white;
+}
+.nameCalendar {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin: 0;
+  color: white;
+}
+.containerCalen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.conteCalendar {
+  height: 60px;
+  width: 60px;
+  left: 257px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fechaCalendarPeq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.diaCalendarPeq {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.fechaCalendaPeQ {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+
+  margin: 0;
+}
+.fechaGrande {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+.principal {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+.contenedorTarjeta {
+  height: 117px;
+  width: 1071px;
+  left: 108px;
+  top: 1722px;
+  background: #FFFFFF;
+  box-shadow: 0px 30px 40px rgba(182, 182, 182, 0.15);
+  border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 2em;
+}
+.contenedorTarjetaBuscar{
+    margin-left: 1em;
+}
+
+.contenedorTarjetaInformacion {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.InformacionTitulo {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#1A263F;
+
+}
+.tarjetaInformacionTitulo {
+  height: 24px;
+}
+.tarjetaInformacionLink {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tarjetaInformacionLinkTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.InformacionLinkTitulo {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#1A263F;
+}
+.tarjetaInformacionLinkImagen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contenedorTarjeSeparador {
+  height: 0px;
+  left: 189px;
+  top: 1805px;
+  margin-top: 10px;
+  border: 1px solid #adadad;
+}
+.contenedorBotonTarjeta{
+
+    margin-right: 1em;
+    height: 42px;
+    width: 197px;
+    background: linear-gradient(90deg, #4FA9DD 37.5%, #63B5B4 100%);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+}
+.botonTarjeta{
+    height: 42px;
+    width: 197px;
+background-color: transparent;
+    border: none;
+  margin-left: 2em;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 800;
+color:white;
+}
+.imagenTarjetaBoton{
+    margin-left: 4em;
+}
+.containerSecundarioEventos{
+    width: 100%;
+    background-color: #F9F9F9;
+    height: 1400px ;
+}
+.contenedorSecundario{
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    gap: 3em;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.TituloSecundarioEventos{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tituloSecundario{
+    font-family: Poppins;
+font-size: 48px;
+font-weight: 700;
+margin-left: 2em;
+text-align: left;
+color: #242565;
+}
+.contenedorBotonesPrincipalEvento{
+    display: flex;
+    gap: 0.8em;
+    height: 60px;
+margin-right: 2em;
+align-items: center;
+}
+.botonEventoDia{
+    width: 244px;
+    height: 46px;
+    border: none;
+    background: #DBE9F1;
+    border-radius: 50px;
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color:#1A263F;
+
+}
+.eventoDia{
+margin-right: 0.6em;
+}
+.botonEventoTipo{
+    width: 244px;
+    height: 46px;
+    border: none;
+    background: white;
+    border-radius: 50px;
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color:#1A263F;
+}
+.eventoTipo{
+    margin-right: 0.6em;
+}
+.contenedorCardEventos{
+    height: 418.0000305175781px;
+width: 334px;
+display: flex;
+flex-direction: column;
+}
+.contenedorCardEvento1{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(358.78deg, #1A263F 0.78%, rgba(26, 38, 63, 0) 98.71%),
+      url("../assets/imagenes/campaign2.png") no-repeat;
+    background-size: cover; 
+}
+.contenedorFechaCard{
+    width: 100%;
+    height: 40%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+.fechaCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+width: 60px;
+left: 257px;
+top: 21px;
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 15px;
+margin-right: 1em;
+margin-top: 0.5em;
+}
+.fechaCardEvento{
+width: 100%;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+margin-top: 1em;
+}
+
+.fechaNumeroCardEvento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+font-size: 26px;
+font-weight: 700;
+text-align: left;
+margin-top: -0.3em;
+}
+.tituloCard{
+    margin: 0;
+    font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color:white;
+
+}
+.subtituloCard{
+    margin: 0;
+    color:white;
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.contenedorTituloCard{
+    margin-top: 3.5em;
+    margin-left: 1.5em;
+}
+
+.contenedorCardEvento2{
+    height: 65%;
+        background: #FFFFFF;
+        border-radius: 0px 0px 18px 18px;
+        display: flex;
+        flex-direction: column;
+    }
+.contendorEvento2{
+    display: flex;
+    flex-direction: column;
+height: 100%;
+gap: 1.4em;
+    }
+    .horaDiaEventoCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.horaDiaEvento{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: #666666;
+
+
+}
+.contenedorHoraEvento{
+    height: 31px;
+display: flex;
+align-items: center;
+margin-left: 1em;
+margin-top: 0.7em;
+}
+.horaEvento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.horaEvento2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contenedorLugarEvento{
+    height: 31px;
+display: flex;
+margin-left: 1em;
+margin-top: -0.5em;
+}
+.separadorEvento{
+    height: 1px;
+    width: 270px;
+    margin-left: 2em;
+    background: #D6D6D6;
+    border-radius: 18.9529px 18.9529px 0px 0px;
+    transform: rotate(180deg);
+
+}
+.contenedorTextoEvento{
+    height: 50px;
+padding: 20px;
+margin-top: -2em;
+}
+.TextoEvento{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color:#666666;
+
+}
+.Evento{
+    margin-top: -1.5em;
+    height: 30px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: end;
+margin-top: -1.7em;
+}
+.textoEvento{
+display: flex;
+font-family: Poppins;
+font-size: 13px;
+font-weight: 800;
+line-height: 20px;
+letter-spacing: 0.07em;
+text-align: left;
+margin-right: 0.5em;
+color: #1A263F;
+
+}
+.imgBotonEvento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+}
+.containerBotonEvento{
+    height: 130px;
+width: 100%;
+background: #F9F9F9;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.botonEvento{
+    height: 59px;
+    width: 206px;
+    border-radius: 30px; 
+    
+background: linear-gradient(90deg, #4FA9DD 37.5%, #63B5B4 100%);
+border-radius: 30px;
+border: none;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 800;
+text-align: center;
+color:white;
+}
+
+
+
+  .section-footer {
+    /* 
+      background-color: $bgFondo; */
+    background-image: url("../assets/img/bgFondo.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    /*  background-position: center center; */
+    background-size: cover;
+    position: relative;
+    /* links contacto estilos */
+    /* ------------------------------------------ */
+    /* section blog-------------------- */
+    /* ----------------------------------- */
+  }
+  .section-footer__img-footer {
+    width: 100%;
+    height: 30em;
+    background-color: rgba(40, 148, 236, 0.8431372549);
+  }
+  .section-footer__container-logo {
+    padding: 6rem 0 0 0;
+  }
+  .section-footer__container-logo img {
+    display: block;
+    margin: 0 0 0 5rem;
+    padding: 3rem 0;
+  }
+  .section-footer__container-col {
+    display: flex;
+    width: calc(100vw - 10rem);
+    margin: 0 5rem;
+    justify-content: space-between;
+  }
+  .section-footer__col1-section-nosotros {
+    height: 11.625rem;
+    width: 13.625rem;
+  }
+  .section-footer__p-nosotros {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  .section-footer__h4-nosotros {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    padding: 0 0 1rem 0;
+  }
+  .section-footer__col1-section-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__h4-contacto {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    padding: 0 0 1rem 0;
+  }
+  .section-footer__container-links-contacto {
+    display: flex;
+    width: 15.625rem;
+  }
+  .section-footer__container-links-link {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  .section-footer__container-links-link img {
+    margin-left: 0.4rem;
+  }
+  .section-footer__container-links-link span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 1;
+  }
+  .section-footer__container-links-telephone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.625rem;
+    width: 12rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #4fa9dd 37.5%, #63b5b4 100%);
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  .section-footer__container-links-telephone img {
+    height: 1rem;
+    width: 16.2229785919px;
+    margin-left: 0.4rem;
+  }
+  .section-footer__container-links-telephone span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 1;
+  }
+  .section-footer__container-links-servicios {
+    text-decoration: none;
+  }
+  .section-footer__container-links-servicios span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  .section-footer__container-links-cat-prop {
+    text-decoration: none;
+  }
+  .section-footer__container-links-cat-prop span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  .section-footer__container-links-op {
+    text-decoration: none;
+  }
+  .section-footer__container-links-op span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 1.25rem;
+  }
+  .section-footer__container-links-partners {
+    text-decoration: none;
+  }
+  .section-footer__container-links-partners span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  .section-footer__container-links-comunidad {
+    text-decoration: none;
+  }
+  .section-footer__container-links-comunidad span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  .section-footer__container-links-op2 {
+    text-decoration: none;
+  }
+  .section-footer__container-links-op2 span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 1.25rem;
+  }
+  .section-footer__container-col-col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-footer__col2-section-servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__col2-section-servicios h4 {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__col2-section-cat-prop {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__col2-section-cat-prop h4 {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__col2-section-links-op {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__container-col-col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-footer__col3-section-partners {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__h4-partners {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__col3-section-comunidades {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__col3-section-comunidades h4 {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__col3-section-links-op {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .section-footer__container-col-col4 h4 {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__section-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .section-footer__title-blog {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }
+  .section-footer__section-blog-blog1 {
+    height: 8.125rem;
+    width: 8.9375rem;
+    padding: 0.625rem;
+    background: linear-gradient(180deg, rgba(67, 73, 101, 0.5) 0%, rgba(67, 73, 101, 0) 100%);
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 1rem;
+  }
+  .section-footer__p-blog {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 0.625rem;
+  }
+  .section-footer__container-container-group-buttons {
+    height: 6em;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 4rem;
+  }
+  .section-footer__container-icons-link {
+    display: flex;
+    gap: 1em;
+    box-sizing: border-box;
+  }
+  .section-footer__container-copyright span {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+  }/*# sourceMappingURL=properties.css.map */
